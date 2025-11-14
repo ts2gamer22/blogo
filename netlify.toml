@@ -1,9 +1,9 @@
 [build]
   command = "npm run build"
-  publish = ".output/public"
+  publish = "dist/client"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
 
 # SPA routing - redirect all requests to index.html
 [[redirects]]
