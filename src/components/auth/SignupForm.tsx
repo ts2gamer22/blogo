@@ -3,7 +3,7 @@ import { useNavigate } from "@tanstack/react-router";
 import { authClient } from "~/lib/auth-client";
 import { toast } from "sonner";
 import { useMutation } from "convex/react";
-import { api } from "~/../../convex/_generated/api";
+import { api } from "convex/_generated/api";
 
 export function SignupForm() {
   const [name, setName] = useState("");
