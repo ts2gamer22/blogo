@@ -5,11 +5,10 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# SPA routing - redirect all requests to index.html
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# SSR routing - redirect to Netlify Function
+# Note: This redirect is handled automatically by @netlify/vite-plugin-tanstack-start
+# The plugin creates a catch-all function that handles all routes
+# We don't need an explicit redirect here for SSR apps
 
 # Headers for security and performance
 [[headers]]
