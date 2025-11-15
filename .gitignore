@@ -9,6 +9,7 @@ node_modules
 .output
 .nitro
 .tanstack
+.netlify
 
 /build/
 /api/
